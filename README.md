@@ -3,20 +3,20 @@
 # A Comparison of Machine Learning Platforms
 
 Machine Learning (ML) Platforms are services which help Data Scientist
-and ML practitioners to build, test, deploy and/or monitor ML models.
+to build, test, deploy and/or monitor ML models.
 Companies often build, buy or rent ML Platforms because they want to
 
-* increase their development and deployment speed of ML models, 
+* increase their deployment speed of ML models, 
 * improve the productivity of their Data Scientist,
 * standardize their ML practices and
-* reduce the operational complexity of using ML models.
+* reduce the operational complexity of ML models.
 
-The collective understanding of what exactly ML Platforms are and what they should do is pretty new
-and still rapidly evolving. The goal of this document is to give an overview over the current state
-of ML Platforms by comparing the capabilities of different platforms. It is written for ML practitioners
-and assumes that readers are familiar with ML terminology. If you are new to the topic, I highly 
-recommend to read the [TWIML Machine Learning Platforms Report][TWIML Report] first as an 
-introduction.
+ML Platform are a relatively new concept, and our collective understanding of what exactly 
+they are and what they should do is still evolving. The goal of this document is to give an 
+overview over the current state of ML Platforms by comparing the capabilities of different 
+platforms. It is written for ML practitioners and assumes that readers are familiar with ML 
+terminology. If you are new to the topic, I highly recommend to read the 
+[TWIML Machine Learning Platforms Report][TWIML Report] as introduction.
 
 
 ## Capabilities and Components of ML Platforms
@@ -62,9 +62,10 @@ Here is a non exhaustive collection of possible capabilities of ML Platforms.
 ## Proprietary ML Platforms
 
 Proprietary ML Platforms are developed by large companies for in-house use. 
-We often only have an incomplete and possibly outdated picture of their capabilities.
+As outsiders, we often only have an incomplete and possibly outdated picture of their 
+capabilities from blog posts and conference talks.
 Nonetheless, it is useful to compare their features, because this group contains 
-some of the most mature and most heavily used platforms.
+some of the most mature and heavily used platforms.
 
 
 ### Known Capabilities
