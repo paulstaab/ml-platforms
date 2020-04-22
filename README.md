@@ -1,3 +1,5 @@
+[![Use this document under the CC BY-SA 4.0 license](https://i.creativecommons.org/l/by-sa/4.0/80x15.png)](http://creativecommons.org/licenses/by-sa/4.0/)
+
 # A Comparison of Machine Learning Platforms
 
 Machine Learning (ML) Platforms are services which help Data Scientist
