@@ -25,13 +25,13 @@ Here is a non exhaustive collection of possible capabilities of ML Platforms.
 
 ### Data Acquisition and Feature Management 
   - Centralized Data Access 
-  - Data Pipelines 
+  - Data Pipelines
+  - Dataset Management
   - Manual Labeling 
   - Label generation (e.g. via week supervision) 
   - Feature Repository 
   - Feature provenance 
   - Backfills
-  - Data versioning 
 
 ### Experiment Management & Model Development 
   - Experiment Tracking 
@@ -73,16 +73,16 @@ some of the most mature and heavily used platforms.
 |                          | BigHead | FBLearner | Michelangelo | Overton | Pro-ML   |
 | ------------------------ | :-----: | :-------: | :----------: | :-----: | :----:   |
 | Company                  | Airbnb  | Facebook  | Uber         | Apple   | LinkedIn |
-| Productive since         |         |           |              |         |          |
-| **Data Acquisition and Feature Management** |
+| Productive since         |         | 2014-2016 |              |         |          |
+| **Data Acquisition and Feature Management**    |
 | Centralized Data Access  | ✓       | ✓         | ✓            |         |          |
 | Data Pipelines           | ✓       | ✓         | ✓            |         |          |
+| Dataset Management       | ✓       |           |              |         |          |
 | Manual Labeling          |         |           |              |         |          |
 | Label Generation         |         |           |              | ✓       |          |
 | Feature Repository       | ✓       | ✓         | ✓            |         | ✓        |
 | Feature Provenance       | ✓       |           |              |         |          |
 | Backfills                | ✓       |           |              |         |          |
-| Data Versioning          | ✓       | ✓         |              |         |          |
 | **Experiment Management and Model Development** |
 | Experiment tracking      | ✓       | ✓         | ✓            | ✓       | ✓        |
 | Model Versioning         | ✓       | ✓         | ✓            | ✓       | ✓        |
