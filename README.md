@@ -24,39 +24,86 @@ terminology. If you are new to the topic, I highly recommend to read the
 Here is a non exhaustive collection of possible capabilities of ML Platforms.
 
 ### Data Acquisition and Feature Management 
-  - Centralized Data Access 
-  - Data Pipelines
-  - Dataset Management
-  - Manual Labeling 
-  - Label generation (e.g. via week supervision) 
-  - Feature Repository 
-  - Feature provenance 
-  - Backfills
 
-### Experiment Management & Model Development 
-  - Experiment Tracking 
-  - Model Versioning
-  - Distributed Training 
-  - Automated Feature Generation 
-  - Automated Hyper-parameter Optimization 
-  - AutoML 
-  - Model partitioning 
-  - Workflows 
-  - Hosted Notebooks 
-  - Model building GUI 
+- **Centralized Data Access**:
+  Users can easily import data from a central data store, e.g. a Data Warehouse or a Data Lake.
+- **Data Pipelines**:
+  Users can create pipelines to transform data and generate features. 
+  The pipelines are executed automatically.
+- **Dataset Management**:
+  Users can create an immutable snapshot of a particular state of their data. The snapshot
+  is kept as a version and is the basis for running experiments in an reproducible manner.
+- **Manual Labeling**:
+  The platform offers a way to annotate labels for a dataset, e.g. via a user interface.
+- **Label Generation**:
+  The platform offers capabilities to automatically generate labels, e.g. via active learning
+  or week supervision approaches like SNORKEL. 
+- **Feature Repository**:
+  User can publish their features in a catalog. It is possible to browse and reuse features
+  developed by others.
+- **Feature Provenance**:
+  It is possible to trace back which data was used to calculate a feature and how much a
+  particular feature contributes to model predictions .
+- **Backfills**:
+  It is possible to calculate new features retrospectively for old versions of the data
+  or for previous points in time.
+
+### Model Training and Experiment Management
+
+- **Model Training**: 
+  The platform offers a service to train ML models.
+- **Distributed Training**: 
+  The platform can train a ML model on multiple machines.
+- **Experiment Management**: 
+  The platform keeps track of experiments and their results.
+  Experiments can be reproduced.
+- **Model Versioning**:
+  The platform keeps track of different versions a model.
+- **Auto Feature Generation**:
+  The platform can automatically derive new features to optimize the performance of a model.
+- **Auto Hyper-parameter Optimization**:
+  User can easily optimize the hyper-parameters of an ML algorithm. 
+- **AutoML**:
+  The platform can automatically select an ML algorithm with good performance.
+- **Model Partitioning**:
+  Users can define important subsets of the data. These subsets are subject to special treatment
+  during model training to optimize the performance on them. 
+- **Workflows**:
+  Users can combine multiple data processing steps and ML models into a common workflow.
+- **Hosted Notebooks**:
+  The platforms offers notebooks for users for e.g. data processing and/or modeling. 
+- **Model building GUI**:
+  The platforms offers a graphical user interface to create ML models.
 
 ### Model Deployment and Performance Monitoring 
-  - Model Deployment 
-  - Model Serving 
-  - Basic Model Monitoring 
-  - Concept Drift Detection 
-  - Online Experiments
-  - Phased Deployments 
-  - Feedback Collection
-  - Scheduled Retraining
-  - Dynamic Retraining 
-  - Batch Scoring 
 
+- **Model Deployment**: 
+  The platform can deploy models into a production environment. 
+- **Model Serving**: 
+  The platform contains a production environment for models. 
+  Models can be hosted directly on the platform for inference. 
+- **Basic Model Monitoring**: 
+  The platform offers basic monitoring for models, e.g. for failures 
+  during inference.
+- **Concept Drift Detection**:
+  The platform can monitor the distributions of model inputs and outputs
+  and detect significant changes.
+- **Online Experiments**:
+  The platform can be used to conduct experiments in the production environment
+  like A/B tests.
+- **Phased Deployments**:
+  The platform execute gradual deployments, e.g. canaries or rolling updates. 
+- **Feedback Collection**:
+  Developers can confirm if a previously-made prediction was correct or not.
+  The information is used to measure and monitor the actual performance of the 
+  model in production.
+- **Scheduled Retraining**:
+  The platform can regularly retrain models with updated data based on a fixed
+  schedule.
+- **Dynamic Retraining**:
+  The platform can detect that a model is outdated, and retrain it when needed. 
+- **Batch Scoring**:
+  User can easily generate predictions of an existing model for new datasets.  
 
 
 ## Proprietary ML Platforms
@@ -74,7 +121,7 @@ some of the most mature and heavily used platforms.
 | ------------------------ | :-----: | :-------: | :----------: | :-----: | :----:   |
 | Company                  | Airbnb  | Facebook  | Uber         | Apple   | LinkedIn |
 | Productive since         |         | 2014-2016 |              |         |          |
-| **Data Acquisition and Feature Management**    |
+| **Data Acquisition and Feature Management** |
 | Centralized Data Access  | ✓       | ✓         | ✓            |         |          |
 | Data Pipelines           | ✓       | ✓         | ✓            |         |          |
 | Dataset Management       | ✓       |           |              |         |          |
@@ -83,12 +130,13 @@ some of the most mature and heavily used platforms.
 | Feature Repository       | ✓       | ✓         | ✓            |         | ✓        |
 | Feature Provenance       | ✓       |           |              |         |          |
 | Backfills                | ✓       |           |              |         |          |
-| **Experiment Management and Model Development** |
-| Experiment tracking      | ✓       | ✓         | ✓            | ✓       | ✓        |
+| **Model Training and Experiment Management** |
+| Model Training           | ✓       | ✓         | ✓            | ✓       | ✓        |
+| Distributed Training     |         |           | ✓            |         | ✓        |
+| Experiment Management    | ✓       | ✓         | ✓            | ✓       | ✓        |
 | Model Versioning         | ✓       | ✓         | ✓            | ✓       | ✓        |
-| Distributed training     |         |           | ✓            |         | ✓        |
 | Auto Feature Generation  |         |           |              |         |          |
-| Auto Hyperparameter opt. | ✓       |           | ✓            | ✓       |          |
+| Auto Hyperparameter Opt. | ✓       |           | ✓            | ✓       |          |
 | AutoML                   |         |           |              | ✓       |          |
 | Model Partitioning       |         |           | ✓            | ✓       |          |
 | Workflows                | ✓       | ✓         |              | ✓       |          |
@@ -104,7 +152,7 @@ some of the most mature and heavily used platforms.
 | Feedback Collection      |         | ✓         | ✓            |         |          |
 | Scheduled Retraining     |         |           | ✓            |         |          |
 | Dynamic Retraining       |         |           |              |         |          |
-| Batch scoring            | ✓       |           |              |         |          |
+| Batch Scoring            | ✓       |           |              |         |          |
 
 **Sources:**
 + BigHead: 
